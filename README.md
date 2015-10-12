@@ -1,6 +1,6 @@
 # Ansible Role: PHP PECL extensions
 
-[![Build Status](https://travis-ci.org/geerlingguy/ansible-role-php-pecl.svg?branch=master)](https://travis-ci.org/geerlingguy/ansible-role-php-pecl)
+[![Build Status](https://travis-ci.org/yfix/ansible-role-php-pecl.svg?branch=master)](https://travis-ci.org/yfix/ansible-role-php-pecl)
 
 Installs PHP PECL extensions on servers with PHP already installed.
 
@@ -21,7 +21,7 @@ A list of extensions that should be installed via `pecl install`. If you'd like 
 
 ## Dependencies
 
-  - geerlingguy.php
+  - yfix.php
 
 ## Example Playbook
 
@@ -29,17 +29,9 @@ A list of extensions that should be installed via `pecl install`. If you'd like 
       vars_files:
         - vars/main.yml
       roles:
-        - { role: geerlingguy.php-pecl }
+        - { role: yfix.php-pecl }
 
 *Inside `vars/main.yml`*:
 
     php_pecl_extensions:
       - xdebug
-
-## License
-
-MIT / BSD
-
-## Author Information
-
-This role was created in 2014 by [Jeff Geerling](http://jeffgeerling.com/), author of [Ansible for DevOps](http://ansiblefordevops.com/).
